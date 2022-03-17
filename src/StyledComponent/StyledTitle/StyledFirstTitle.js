@@ -11,6 +11,7 @@ const StyleFirstTitle = styled(Typography)`
     font-size: 4em;
     font-weight: bold;
     font-family: ${(props) => props.theme.fonts.fantasy};
+    padding-top: 30px;
   }
 `;
 

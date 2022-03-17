@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-import { img_300, unavailable } from "../../Config/Config";
+import { img_500, unavailable } from "../../Config/Config";
 
 const ContentModal = ({ children, media_type, id }) => {
   const [open, setOpen] = React.useState(false);
@@ -57,7 +57,7 @@ const ContentModal = ({ children, media_type, id }) => {
                   alt={content.name || content.title}
                   src={
                     content.poster_path
-                      ? `${img_300}/${content.poster_path}`
+                      ? `${img_500}/${content.poster_path}`
                       : unavailable
                   }
                 />

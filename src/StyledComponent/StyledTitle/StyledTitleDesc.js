@@ -6,10 +6,10 @@ const StyledTitleDesc = styled(Typography)`
     display: flex;
     justify-content: center;
     color: ${(props) => props.theme.colors.white};
-    font-size: 1.3em;
+    font-size: 1.5em;
     padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 1.5;
   }
 `;
