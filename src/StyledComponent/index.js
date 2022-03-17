@@ -47,5 +47,5 @@ export {
   StyledBottomAct,
   StyledChip,
   StyledButton,
-  StyledGridButton
+  StyledGridButton,
 };
