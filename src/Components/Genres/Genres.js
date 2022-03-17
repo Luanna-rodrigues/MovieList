@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { Grid, Chip } from "@material-ui/core";
+import { StyledChip } from "../../StyledComponent";
 
 const Genres = ({
   selectedGenres,
@@ -44,10 +45,9 @@ const Genres = ({
     <Grid>
       {selectedGenres &&
         selectedGenres.map((genre) => (
-          <Chip
+          <StyledChip
             label={genre.name}
             key={genre.id}
-            color="primary"
             clickable
             onDelete={() => handleRemove(genre)}
           />

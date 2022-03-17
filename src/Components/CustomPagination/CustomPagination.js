@@ -4,7 +4,7 @@ import Pagination from "@material-ui/lab/Pagination";
 
 const PaginationStyled = styled(Pagination)`
   button {
-    color: #fff;
+    color: #ffd700;
   }
 `;
 

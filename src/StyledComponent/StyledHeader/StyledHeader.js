@@ -8,7 +8,6 @@ const StyledHeader = styled(TableHead)`
   display: flex;
   justify-content: center;
   font-size: 5em;
-  font-family: fantasy;
   z-index: 50;
   padding-left: 25%;
   padding-right: 25%;

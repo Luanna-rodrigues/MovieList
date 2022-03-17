@@ -6,7 +6,7 @@ const StyleFirstTitle = styled(Typography)`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.yellow};
     letter-spacing: 0.00938em;
     font-size: 4em;
     font-weight: bold;

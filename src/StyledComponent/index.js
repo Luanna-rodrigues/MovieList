@@ -19,6 +19,7 @@ import StyledTitleTag from "./StyledTitle/StyledTitleTag";
 import StyledTitleDesc from "./StyledTitle/StyledTitleDesc";
 import StyledBottom from "./StyledBottom/StyledBottom";
 import StyledBottomAct from "./StyledBottom/StyledBottomAct";
+import StyledChip from "./StyledChip/StyledChip";
 
 export {
   StyledBadge,
@@ -42,4 +43,5 @@ export {
   StyledTitleDesc,
   StyledBottom,
   StyledBottomAct,
+  StyledChip
 };

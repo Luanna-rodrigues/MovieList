@@ -6,6 +6,7 @@ const StyleSubTitle = styled(Typography)`
     font-size: 1em;
     display: flex;
     justify-content: center;
+    padding-top: 2px;
   }
 `;
 
