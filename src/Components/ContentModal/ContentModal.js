@@ -1,20 +1,24 @@
 import React from "react";
-import { Modal, Backdrop, Fade, Grid } from "@material-ui/core";
+import { Modal, Backdrop, Fade, Grid, Button } from "@material-ui/core";
 import {
   StyledGridCard,
   StyleFirstTitle,
   StyledGridStu,
   StyledTitleTag,
   StyledTitleDesc,
+  StyledButton,
+  StyledGridButton
 } from "../../StyledComponent";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import { img_500, unavailable } from "../../Config/Config";
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const ContentModal = ({ children, media_type, id }) => {
   const [open, setOpen] = React.useState(false);
   const [content, setContent] = useState();
+  const [video, setVideo] = useState();
 
   const handleOpen = () => {
     setOpen(true);
@@ -31,8 +35,16 @@ const ContentModal = ({ children, media_type, id }) => {
     setContent(data);
   };
 
+  const fetchVideo = async () => {
+    const {data} = await axios.get(
+      `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+    );
+    setVideo(data.results[0]?.key);
+  }
+
   useEffect(() => {
     fetchData();
+    fetchVideo();
   }, []);
 
   return (
@@ -78,7 +90,14 @@ const ContentModal = ({ children, media_type, id }) => {
                   )}
 
                   <StyledTitleDesc>{content.overview}</StyledTitleDesc>
+
+                  <StyledGridButton>
+                  <StyledButton variant="contained" startIcon={<YouTubeIcon/>} target="__blank" href={`https://www.youtube.com/watch?v=${video}`}>
+                  Watch the trailer now
+                </StyledButton>
+                </StyledGridButton>
                 </Grid>
+               
               </StyledGridStu>
             )}
           </Fade>
