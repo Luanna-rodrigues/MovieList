@@ -33,7 +33,7 @@ const Series = () => {
   }, [genreforURL, page]);
 
   return (
-    <Grid container>
+    <Grid container justifyContent="center">
       <StyledFirstGrid container>
         <StyleFirstTitle>TV Series</StyleFirstTitle>
       </StyledFirstGrid>

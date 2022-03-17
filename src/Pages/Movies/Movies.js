@@ -33,7 +33,7 @@ const Movies = () => {
   }, [genreforURL, page]);
 
   return (
-    <Grid container>
+    <Grid container justifyContent="center">
       <StyledFirstGrid container>
         <StyleFirstTitle>Movies</StyleFirstTitle>
       </StyledFirstGrid>
