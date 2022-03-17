@@ -8,7 +8,7 @@ const StyledTitleTag = styled(Typography)`
     font-size: 2.5em;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: ${(props) => props.theme.colors.yellow};
+    color: ${(props) => props.theme.colors.gold};
     line-height: 1.5;
   }
 `;
